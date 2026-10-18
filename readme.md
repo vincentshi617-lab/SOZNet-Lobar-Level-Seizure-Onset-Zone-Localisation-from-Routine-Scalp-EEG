@@ -9,7 +9,7 @@ Right Temporo-Parietal (RT/TP)
 Left Occipital (LO)
 Right Occipital (RO)
 
-<img width="760" height="523" alt="Screenshot 2026-07-01 at 4 24 27 pm" src="https://github.com/user-attachments/assets/179e5731-9b87-4514-8661-d32ee3b82aa7" />
+<img width="943" height="429" alt="Screenshot 2026-08-20 at 1 31 29 pm" src="https://github.com/user-attachments/assets/857e867d-bcb1-49ca-bb84-5d85a1bcee9f" />
 
 The project is intended to support—not replace—epileptologist judgement during presurgical evaluation. It is not a seizure detector, not a diagnostic device, and not validated for prospective clinical deployment.
 
@@ -91,4 +91,10 @@ External test:
 
 Compare with other model
 <img width="2200" height="1040" alt="模型对比" src="https://github.com/user-attachments/assets/09e65f4e-1445-4ae2-a630-e35237013e41" />
+
+Model can generate probability of seizure onset zone overtime and allow the user to back trace the onset time:
+
+<img width="1339" height="436" alt="Screenshot 2026-07-14 at 4 02 04 pm" src="https://github.com/user-attachments/assets/c3d8c91d-b9c4-4266-a8d8-51f31873103f" />
+
+<img width="1296" height="486" alt="Screenshot 2026-07-14 at 4 02 18 pm" src="https://github.com/user-attachments/assets/6bcfbc19-a565-413d-b8a5-74a2aba2a412" />
 
