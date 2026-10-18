@@ -1,0 +1,8 @@
+model: m1
+num_models: 3
+finetune_m: 3
+start_seed: 100
+data:
+  data_root: data/processed
+  annotation_csv: data/labels.csv
+output_dir: outputs/ensemble
