@@ -9,6 +9,8 @@ Right Temporo-Parietal (RT/TP)
 Left Occipital (LO)
 Right Occipital (RO)
 
+<img width="760" height="523" alt="Screenshot 2026-07-01 at 4 24 27 pm" src="https://github.com/user-attachments/assets/179e5731-9b87-4514-8661-d32ee3b82aa7" />
+
 The project is intended to support—not replace—epileptologist judgement during presurgical evaluation. It is not a seizure detector, not a diagnostic device, and not validated for prospective clinical deployment.
 
 
@@ -32,7 +34,9 @@ Clinical-style evaluation: patient-level splits, annotation-sparse holdout, cros
 
 Method Pipeline
 
-<img width="8352" height="908" alt="deepseek_mermaid_20261018_4a2e0e" src="https://github.com/user-attachments/assets/acec0509-0356-4e1a-bc36-ab2ad84bf290" />
+<img width="2100" height="900" alt="组合模型内部测试" src="https://github.com/user-attachments/assets/bf2c7b7e-88b1-4fb5-9771-839c5a3a9a33" />
+<img width="5220" height="2010" alt="beautiful_soz_pipeline" src="https://github.com/user-attachments/assets/b913aaa8-16fb-428a-b60e-d272b0bd66a5" />
+
 
 
 Model Variants
@@ -49,6 +53,16 @@ Ensemble	Final research model	3× M1 soup + M2 soup + M3 soup, soft voting	5 con
 The paper’s main finding is that the factorised M1 matches or outperforms much larger single-axis variants, supporting architectural inductive bias over raw parameter count.
 
 
+Architecture
+
+M1
+<img width="1800" height="1300" alt="模型1架构 copy" src="https://github.com/user-attachments/assets/3521d77a-d04b-4a2b-9353-330dbc6d4c10" />
+
+M2&3
+<img width="4800" height="3600" alt="模型2，3架构" src="https://github.com/user-attachments/assets/c958ed5f-a45c-405c-9c49-15070fe3350f" />
+
+
+
 Reported Results
 
 These are retrospective research results from the associated paper. They are not prospective clinical validation.
@@ -63,3 +77,18 @@ Unlabelled random windows, single M1	  Exact Match	      66.67%
 Healthy controls	                      False positives	  0 / 108
 24-hour recording, 256 Hz	              End-to-end runtime 4.26 min
 Model inference	                        Runtime	           <8 s
+
+Statistics
+
+Performance (ensemble):
+<img width="2100" height="900" alt="组合模型内部测试" src="https://github.com/user-attachments/assets/3192271a-4e03-44d4-ba3a-4cdf73c70c23" />
+
+Holdout test:
+<img width="2100" height="900" alt="holdout" src="https://github.com/user-attachments/assets/0a2280bb-52b0-4b25-a45d-c182d57439a9" />
+
+External test:
+<img width="1400" height="600" alt="外部测试" src="https://github.com/user-attachments/assets/cc918cf5-b416-4f91-9bb1-57c21ebc3005" />
+
+Compare with other model
+<img width="2200" height="1040" alt="模型对比" src="https://github.com/user-attachments/assets/09e65f4e-1445-4ae2-a630-e35237013e41" />
+
